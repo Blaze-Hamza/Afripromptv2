@@ -854,14 +854,9 @@ footer {
 .pricing-card:hover { background: var(--white); }
 .pricing-card--featured {
   background: var(--ink);
-  color: var(--paper);
-}
-body.dark .pricing-card--featured {
-  background: var(--paper);
-  color: var(--ink);
+  color: #f8f6f1;
 }
 .pricing-card--featured:hover { background: var(--ink); }
-body.dark .pricing-card--featured:hover { background: var(--paper); }
 
 .pricing-badge-featured {
   position: absolute;
@@ -889,9 +884,6 @@ body.dark .pricing-card--featured:hover { background: var(--paper); }
 .pricing-card--featured .pricing-tier {
   color: rgba(248,246,241,0.6);
 }
-body.dark .pricing-card--featured .pricing-tier {
-  color: var(--ink-60);
-}
 .pricing-amount {
   display: flex;
   align-items: baseline;
@@ -907,7 +899,6 @@ body.dark .pricing-card--featured .pricing-tier {
   margin-top: 6px;
 }
 .pricing-card--featured .pricing-currency { color: rgba(248,246,241,0.6); }
-body.dark .pricing-card--featured .pricing-currency { color: var(--ink-60); }
 .pricing-figure {
   font-family: var(--serif);
   font-size: clamp(2.4rem, 4vw, 3.4rem);
@@ -915,8 +906,7 @@ body.dark .pricing-card--featured .pricing-currency { color: var(--ink-60); }
   letter-spacing: -0.04em;
   color: var(--ink);
 }
-.pricing-card--featured .pricing-figure { color: var(--paper); }
-body.dark .pricing-card--featured .pricing-figure { color: var(--ink); }
+.pricing-card--featured .pricing-figure { color: #f8f6f1; }
 .pricing-figure--custom {
   font-family: var(--serif);
   font-size: clamp(2.4rem, 4vw, 3.4rem);
@@ -931,7 +921,6 @@ body.dark .pricing-card--featured .pricing-figure { color: var(--ink); }
   margin-bottom: 32px;
 }
 .pricing-card--featured .pricing-desc { color: rgba(248,246,241,0.65); }
-body.dark .pricing-card--featured .pricing-desc { color: var(--ink-60); }
 .pricing-features {
   list-style: none;
   display: flex;
@@ -942,7 +931,6 @@ body.dark .pricing-card--featured .pricing-desc { color: var(--ink-60); }
   padding-top: 28px;
 }
 .pricing-card--featured .pricing-features { border-top-color: rgba(248,246,241,0.15); }
-body.dark .pricing-card--featured .pricing-features { border-top-color: var(--ink-20); }
 .pricing-features li {
   display: flex;
   align-items: center;
@@ -951,7 +939,6 @@ body.dark .pricing-card--featured .pricing-features { border-top-color: var(--in
   color: var(--ink-60);
 }
 .pricing-card--featured .pricing-features li { color: rgba(248,246,241,0.8); }
-body.dark .pricing-card--featured .pricing-features li { color: var(--ink-60); }
 .pricing-features svg {
   width: 16px;
   height: 16px;
