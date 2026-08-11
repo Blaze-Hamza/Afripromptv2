@@ -1,7 +1,27 @@
 // main.js — AfriPrompt Studio
 
+// ── THEME INITIALISATION ──
+// Default to light mode unless user previously toggled to dark
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark');
+} else {
+  document.body.classList.remove('dark');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ── THEME TOGGLE ──
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      if (document.body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
   // ── CUSTOM CURSOR ──
   const cursor = document.getElementById('cursor');
   let cx = window.innerWidth / 2;
