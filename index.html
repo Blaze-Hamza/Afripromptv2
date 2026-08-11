@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AfriPrompt Studio — Elite Web Design, Nairobi</title>
+  <meta name="description" content="AfriPrompt Studio builds high-performance, conversion-focused websites for Kenyan businesses. M-Pesa integration, mobile-first, SEO-optimised." />
+  <meta name="theme-color" content="#f8f6f1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor"></div>
+
+  <!-- WhatsApp FAB -->
+  <a id="fab" class="fab-wa" href="https://wa.me/254718109203?text=Hi%20AfriPrompt%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <!-- WhatsApp icon — not a library icon, drawn from spec -->
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M16 3C8.82 3 3 8.82 3 16c0 2.28.598 4.42 1.643 6.272L3 29l6.93-1.617A12.93 12.93 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm-3.22 7.32c-.22-.5-.45-.51-.66-.52l-.56-.01c-.2 0-.51.074-.78.372-.27.298-1.03 1.01-1.03 2.464 0 1.455 1.056 2.86 1.203 3.06.148.2 2.04 3.247 5.022 4.427.703.303 1.25.484 1.677.619.704.225 1.345.193 1.851.117.565-.084 1.74-.713 1.986-1.4.245-.686.245-1.275.172-1.398-.074-.122-.27-.196-.565-.343-.296-.148-1.75-.862-2.022-.96-.27-.099-.466-.148-.663.148-.196.295-.76.96-.932 1.158-.172.197-.344.222-.639.074-.295-.148-1.245-.459-2.37-1.462-.876-.782-1.468-1.748-1.64-2.044-.172-.295-.018-.455.13-.602.133-.132.295-.344.443-.516.148-.172.197-.295.296-.492.099-.197.05-.37-.025-.517-.074-.148-.663-1.6-.909-2.19Z"
+        fill="white"/>
+    </svg>
+  </a>
+
+  <!-- Call FAB (Mobile Only) -->
+  <a id="fab-call" class="fab-call" href="tel:+254718109203" aria-label="Call Us">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
+  </a>
+
+  <!-- ══════ NAV ══════ -->
+  <nav id="nav">
+    <div class="nav-left">
+      <div class="nav-avail">
+        <span class="nav-avail-dot"></span>
+        Available
+      </div>
+    </div>
+    <a class="nav-logo" href="#">AfriPrompt Studio</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#works">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+      </div>
+      <a class="nav-cta" href="https://wa.me/254718109203?text=Hi%20AfriPrompt%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener">
+        <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H4M12 2V10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Start a Project
+      </a>
+    </div>
+  </nav>
+
+  <!-- ══════ HERO ══════ -->
+  <header class="hero" id="hero">
+
+    <!-- Decorative background word (outline only) -->
+    <span class="hero-bg-word" aria-hidden="true">Studio</span>
+
+    <!-- Mid-hero rule to break the void -->
+    <div class="hero-mid-rule" aria-hidden="true">
+      <span class="hero-mid-label">Web Design · Nairobi · Est. 2024</span>
+    </div>
+
+    <!-- Decorative column rule — hidden via CSS -->
+    <div class="hero-col-rule" aria-hidden="true"></div>
+
+    <!-- Rotating badge — now anchored bottom-right -->
+    <div class="hero-badge" aria-hidden="true">
+      <svg class="hero-badge-ring" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <path id="circlePath" d="M 65,65 m -48,0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0"/>
+        </defs>
+        <text class="hero-badge-text">
+          <textPath href="#circlePath" startOffset="0%">Available for Projects · Nairobi Kenya · Web Design · </textPath>
+        </text>
+      </svg>
+      <div class="hero-badge-center">
+        <svg class="hero-badge-center-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 19L19 5M19 5H9M19 5V15"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-top-bar">
+      <div class="hero-location">
+        <span class="hero-location-dot"></span>
+        Nairobi, Kenya
+      </div>
+      <div class="hero-top-right">
+        <p>High-performance websites, engineered for the Kenyan market. WhatsApp response under 2&nbsp;hours.</p>
+      </div>
+    </div>
+
+    <!-- Mobile fill — scrollable service chips, replaces the void -->
+    <div class="hero-mobile-fill" aria-hidden="true">
+      <div class="hero-tag-strip">
+        <span class="hero-tag">Web Design</span>
+        <span class="hero-tag">E-Commerce</span>
+        <span class="hero-tag">M-Pesa</span>
+        <span class="hero-tag">SEO</span>
+        <span class="hero-tag">Brand Identity</span>
+        <span class="hero-tag">WhatsApp Funnels</span>
+        <span class="hero-tag">Mobile-First</span>
+      </div>
+    </div>
+
+    <h1 class="hero-headline" id="hero-title">
+      Websites that win<br>clients, <em>effortlessly.</em>
+    </h1>
+
+    <div class="hero-bottom">
+      <div class="hero-cta-group">
+        <a class="btn-wa" href="https://wa.me/254718109203?text=Hi%20AfriPrompt%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 32 32" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16 3C8.82 3 3 8.82 3 16c0 2.28.598 4.42 1.643 6.272L3 29l6.93-1.617A12.93 12.93 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm-3.22 7.32c-.22-.5-.45-.51-.66-.52l-.56-.01c-.2 0-.51.074-.78.372-.27.298-1.03 1.01-1.03 2.464 0 1.455 1.056 2.86 1.203 3.06.148.2 2.04 3.247 5.022 4.427.703.303 1.25.484 1.677.619.704.225 1.345.193 1.851.117.565-.084 1.74-.713 1.986-1.4.245-.686.245-1.275.172-1.398-.074-.122-.27-.196-.565-.343-.296-.148-1.75-.862-2.022-.96-.27-.099-.466-.148-.663.148-.196.295-.76.96-.932 1.158-.172.197-.344.222-.639.074-.295-.148-1.245-.459-2.37-1.462-.876-.782-1.468-1.748-1.64-2.044-.172-.295-.018-.455.13-.602.133-.132.295-.344.443-.516.148-.172.197-.295.296-.492.099-.197.05-.37-.025-.517-.074-.148-.663-1.6-.909-2.19Z"
+              fill="white"/>
+          </svg>
+          Message Us
+        </a>
+        <a class="btn-text" href="#works">
+          View work
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="hero-scroll-hint">Scroll to explore</div>
+    </div>
+  </header>
+
+  <!-- ══════ MARQUEE ══════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-inner">
+      <span class="marquee-item">Web Design</span>
+      <span class="marquee-item">E-Commerce</span>
+      <span class="marquee-item">M-Pesa Integration</span>
+      <span class="marquee-item">Performance SEO</span>
+      <span class="marquee-item">Brand Identity</span>
+      <span class="marquee-item">WhatsApp Funnels</span>
+      <span class="marquee-item">Mobile-First</span>
+      <span class="marquee-item">Nairobi Built</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-item">Web Design</span>
+      <span class="marquee-item">E-Commerce</span>
+      <span class="marquee-item">M-Pesa Integration</span>
+      <span class="marquee-item">Performance SEO</span>
+      <span class="marquee-item">Brand Identity</span>
+      <span class="marquee-item">WhatsApp Funnels</span>
+      <span class="marquee-item">Mobile-First</span>
+      <span class="marquee-item">Nairobi Built</span>
+    </div>
+  </div>
+
+  <!-- ══════ METRICS ══════ -->
+  <div class="metrics section" style="padding-top:0;padding-bottom:0;border-top:none;">
+    <div class="metric-item">
+      <div class="metric-num">
+        <span class="count" data-to="6">0</span>
+      </div>
+      <div class="metric-label">Projects delivered</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-num">
+        <span class="count" data-to="100">0</span><span class="metric-suffix">%</span>
+      </div>
+      <div class="metric-label">Customer satisfaction</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-num">
+        <span class="count" data-to="1">0</span><span class="metric-suffix">hr</span>
+      </div>
+      <div class="metric-label">WhatsApp response</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-num">
+        <span class="count" data-to="3">0</span><span class="metric-suffix">&times;</span>
+      </div>
+      <div class="metric-label">Average lead uplift</div>
+    </div>
+  </div>
+
+  <!-- ══════ SELECTED WORKS ══════ -->
+  <section class="section" id="works">
+    <div class="section-label fade-up"><span></span>Selected Work</div>
+    <h2 class="section-title fade-up" style="transition-delay:.08s">What we've <em>built.</em></h2>
+
+    <div class="work-list">
+
+      <!-- Filsora -->
+      <a class="work-item" href="https://filsora2.vercel.app/" target="_blank" rel="noopener">
+        <div class="work-item-num">01</div>
+        <div class="work-item-body">
+          <div class="work-item-tag">E-Commerce · Live</div>
+          <h3 class="work-item-title">Filsora Store</h3>
+          <p class="work-item-desc">A fully-integrated e-commerce storefront built for high-volume retail. Frictionless checkout, optimised for Kenyan mobile networks, M-Pesa ready.</p>
+        </div>
+        <div class="work-item-right">
+          <svg class="work-item-arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L16 4M16 4H6M16 4V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="work-thumb">
+            <iframe src="https://filsora2.vercel.app/" tabindex="-1" loading="lazy" title="Filsora preview"></iframe>
+          </div>
+        </div>
+      </a>
+
+      <!-- Blaze Trading -->
+      <a class="work-item" href="https://blazetrading.vercel.app/" target="_blank" rel="noopener">
+        <div class="work-item-num">02</div>
+        <div class="work-item-body">
+          <div class="work-item-tag">FinTech · In Development</div>
+          <h3 class="work-item-title">Blaze Trading Platform</h3>
+          <p class="work-item-desc">A high-performance algorithmic trading dashboard featuring a real-time journal, custom bot integrations, and a data-dense dark-mode interface.</p>
+        </div>
+        <div class="work-item-right">
+          <svg class="work-item-arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L16 4M16 4H6M16 4V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="work-thumb">
+            <iframe src="https://blazetrading.vercel.app/" tabindex="-1" loading="lazy" title="Blaze Trading preview"></iframe>
+          </div>
+          <span class="work-badge">Preview</span>
+        </div>
+      </a>
+
+      <!-- Next project -->
+      <div class="work-item" style="opacity:.5; pointer-events:none;">
+        <div class="work-item-num">03</div>
+        <div class="work-item-body">
+          <div class="work-item-tag">Your business · Next</div>
+          <h3 class="work-item-title">Your Project Here</h3>
+          <p class="work-item-desc">We're building something exceptional for our next client. Could be you.</p>
+        </div>
+        <div class="work-item-right">
+          <svg class="work-item-arrow" viewBox="0 0 20 20" fill="none">
+            <path d="M4 16L16 4M16 4H6M16 4V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════ SERVICES ══════ -->
+  <section class="section" id="services">
+    <div class="section-label fade-up"><span></span>Expertise</div>
+    <h2 class="section-title fade-up" style="transition-delay:.08s">What we <em>do.</em></h2>
+
+    <div class="services-cols">
+      <div class="service-cell">
+        <div class="service-num">01</div>
+        <h3 class="service-title">Business Websites</h3>
+        <p class="service-desc">Fast, conversion-focused websites designed around the Kenyan audience. Mobile-first, SEO-ready, and built to generate WhatsApp leads from day&nbsp;one.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">02</div>
+        <h3 class="service-title">E-Commerce Stores</h3>
+        <p class="service-desc">Full-featured online stores with M-Pesa, card payments, and inventory management — your products selling around the clock, automatically.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">03</div>
+        <h3 class="service-title">Brand Identity</h3>
+        <p class="service-desc">Logo, colour systems, and visual language that makes your brand instantly recognisable — built to outlast trends and grow with your business.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">04</div>
+        <h3 class="service-title">SEO &amp; Performance</h3>
+        <p class="service-desc">Technical SEO, Core Web Vitals, and Google My Business setup. Get found by the clients actively searching for what you offer in Nairobi.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">05</div>
+        <h3 class="service-title">WhatsApp Funnels</h3>
+        <p class="service-desc">Every website we build has a clear, intentional path to your WhatsApp inbox. We design conversion architecture so you never miss a lead.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">06</div>
+        <h3 class="service-title">Maintenance &amp; Support</h3>
+        <p class="service-desc">Ongoing updates, security patches, and performance monitoring — so your website stays fast and converting long after launch day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ PROCESS ══════ -->
+  <section class="section" id="process">
+    <div class="section-label fade-up"><span></span>How We Work</div>
+    <h2 class="section-title fade-up" style="transition-delay:.08s">Simple. <em>Transparent.</em></h2>
+
+    <div class="process-rows">
+      <div class="process-row">
+        <div class="process-n">01</div>
+        <div class="process-body">
+          <h3 class="process-title">Discovery</h3>
+          <p class="process-desc">We start with a conversation — WhatsApp or call — to understand your business, goals, target audience, and what success looks like for you.</p>
+          <p class="process-when">Day 1</p>
+        </div>
+      </div>
+      <div class="process-row">
+        <div class="process-n">02</div>
+        <div class="process-body">
+          <h3 class="process-title">Strategy &amp; Design</h3>
+          <p class="process-desc">We map your user journey, wireframe every key screen, and present a visual design for your approval — before a single line of code is written.</p>
+          <p class="process-when">Days 2–5</p>
+        </div>
+      </div>
+      <div class="process-row">
+        <div class="process-n">03</div>
+        <div class="process-body">
+          <h3 class="process-title">Build &amp; Integrate</h3>
+          <p class="process-desc">We develop the site with performance, SEO, and conversions baked in from the start. M-Pesa, WhatsApp, and any third-party integrations are included.</p>
+          <p class="process-when">Days 5–12</p>
+        </div>
+      </div>
+      <div class="process-row">
+        <div class="process-n">04</div>
+        <div class="process-body">
+          <h3 class="process-title">Launch &amp; Grow</h3>
+          <p class="process-desc">We deploy, hand over full access, and set up analytics so you can see exactly where every lead is coming from. Then we stay available for you.</p>
+          <p class="process-when">Day 14</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ CTA ══════ -->
+  <section class="cta-section" id="contact">
+    <h2 class="cta-headline fade-up">Stop leaving<br>money on the table. <em>Let's talk.</em></h2>
+    <p class="cta-sub fade-up" style="transition-delay:.1s">Your competitors are investing in better websites. Every day without one is a lead you didn't capture. We respond within 2&nbsp;hours.</p>
+    <a class="btn-wa fade-up" href="https://wa.me/254718109203?text=Hi%20AfriPrompt%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" style="transition-delay:.2s;width:fit-content;">
+      <svg width="16" height="16" viewBox="0 0 32 32" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M16 3C8.82 3 3 8.82 3 16c0 2.28.598 4.42 1.643 6.272L3 29l6.93-1.617A12.93 12.93 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm-3.22 7.32c-.22-.5-.45-.51-.66-.52l-.56-.01c-.2 0-.51.074-.78.372-.27.298-1.03 1.01-1.03 2.464 0 1.455 1.056 2.86 1.203 3.06.148.2 2.04 3.247 5.022 4.427.703.303 1.25.484 1.677.619.704.225 1.345.193 1.851.117.565-.084 1.74-.713 1.986-1.4.245-.686.245-1.275.172-1.398-.074-.122-.27-.196-.565-.343-.296-.148-1.75-.862-2.022-.96-.27-.099-.466-.148-.663.148-.196.295-.76.96-.932 1.158-.172.197-.344.222-.639.074-.295-.148-1.245-.459-2.37-1.462-.876-.782-1.468-1.748-1.64-2.044-.172-.295-.018-.455.13-.602.133-.132.295-.344.443-.516.148-.172.197-.295.296-.492.099-.197.05-.37-.025-.517-.074-.148-.663-1.6-.909-2.19Z"
+          fill="white"/>
+      </svg>
+      Message on WhatsApp
+    </a>
+  </section>
+
+  <!-- ══════ FOOTER ══════ -->
+  <footer>
+    <div class="footer-logo">AfriPrompt Studio</div>
+    <div class="footer-copy">&copy; 2024 · Nairobi, Kenya · Built for Africa</div>
+    <div class="footer-links">
+      <a href="#works">Work</a>
+      <a href="#services">Services</a>
+      <a href="https://wa.me/254718109203" target="_blank">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
